@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/estilos.css">
+    <title>REGISTRAR</title>
+</head>
+<body>
+    <form action="/login" method="POST">
+<h2>INICIAR SESIÓN</h2>
+<label>Usuario: </label>
+<input type="text" name="txtuser" required><br><br>
+<label>Clave: </label>
+<input type="password" name="txtclave" required><br><br>
+<input type="submit" value="insertar">
+{% if mensaje %}
+<p style=" color :pink;">{{mensaje}}</p>
+{% endif %}
+</form>
+
+</body>
+</html>
